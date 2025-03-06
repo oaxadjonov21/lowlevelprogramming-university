@@ -43,3 +43,33 @@ Men quyi-daraja dasturlashini C va assembly kabi quyi-daraja dasturlash tillari 
 
 Ha, tizim dasturlashi (systems programming) quyi-daraja dasturlashiga yaqin tushuncha. Bu sahifa tizim dasturlashida bo'lmagan hardware dizayni va firmware'ni qurishni o'z ichiga oladi.
 - [Wikipedia: System programming](https://en.wikipedia.org/wiki/System_programming)
+
+Nihoyat, bu sahifa hardware qismlaridan tortib Linux kerneligacha bo'lga mavzularni o'z ichiga oladi. Bu turli xil qatlamlarning (layers) ulkan  ????? (range'ga nima tarjima?). Bir sahifalik dokument hech qachon barcha qatlarmlarning detallarini qamrab ololmaydi. Shuning uchun buning asosiy maqsadi quy-daraja dasturlashi uchun boshlang'ich nuqta bo'lib xizmat qilishdir.
+
+## Nazariya
+
+Quyi-daraja dasturlashiga asosiy tayanch nazariyalar ushbular hisoblanadi:
+* Kompyuter Arxitetkturasi
+* Operatsion Tizimlar
+
+Menimcha nazariyani o'rganishning eng zo'r yo'li bu kursdir. Kitoblarni o'qish ham yomon yo'l emas-u, lekin juda ko'p vaqt va mehnat talab qiladi. Siz ko'plab yaxshi kurslar (classes) va onlayn universitelarni topa olasiz. Misol uchun, Coursera.org va edx.org.
+Nazary bu nazariya. Siz kursda A+ olishingiz kerak deb o'ylamayman. Shunchaki asosiy g'oyani tushuning.
+Siz bilimingiz/mahoratingizni tajriba orqali yaxshilab borasiz.
+
+Endi Sizga o'zim o'qigan bir necha kitoblarni tanishtirsam. Bu kitoblar odatda universitetlarda darsliklar sifatida ishlatiladi. Agar Sizning universitetingizda bu kitoblar ishlatilgan kurslar bo'lmasa, bir qancha vaqtingizni ularni o'qishga sarflasangiz arziydi.
+* Kompyuter Arxitekturasi
+	* Computer Architecture, Fifth Edition: A Quantitative Approach
+	* Computer Systems: A Programmer's Perspective
+	* Compuer Organization and Design, Fourth Edition: The Hardware/Software Interface
+* Operatsion Tizimlar
+	* The Magic Garden Explained: The Internals of UNIX System V Release 4 an Open Systems Design
+	* The Design of the UNIX Operating System
+	* Operating Systems: Internals and Design Principles by William Stallings
+* Tavsiya etiladigan Kurslar
+	* [CS401: Operating Systems from saylor.org](https://learn.saylor.org/course/view.php?id=94)
+* Umumiy Dasturlash Mahorati (General Programming Skill)
+	* [Structure and Interpretation of Computer Programs](https://en.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs)
+		* Bu  kitob qanday qilib yaxshi dasturchi bo'lish haqida. Sizga nafaqat nazariya, balki faqat texnika (technique) kerak. Sababi, dasturlash bir narsa qurishdir. ??? (yaxshi chqimadi)
+		* Agar Siz List/Scheme tillarini o'rgansangiz, boshqa tillarni tezda o'rgana olishingiz mumkin
+		* [Men bu kitobdagi mashqlarni 80% atrofida yechib chiqdim. Ularni ishlash arzirli deb o'ylayman (???? bu yerdayam tarjima yemadi)](https://github.com/gurugio/sicp_exercise)
+	
