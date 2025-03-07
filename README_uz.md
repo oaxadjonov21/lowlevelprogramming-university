@@ -292,3 +292,29 @@ IoT yangi trend. Shu tufayli unga qanday OS'lar ishlatilishi ko'rib chiqishga ar
 ARM, Samsumng va bohqa kompaniyalar o'zining real-vaqtda ishlaydigan OS'ga ega. Ammo, afsuski, ularning ko'p yopiq manbali.
 Lekin Linux Foundation'ning yechimi bor: Zephyr
 * https://www.zephyrproject.org/
+
+Odatiy bulut serverlari (cloud servers) ko'p qatlamlarga (layers) ega; misol uchun, host (ya'ni asosiy, jarayonlar olib borilayotgan) OS, KVM drayveri, qemu protsessi, guest OS (virtual mashinadagi OS) va xizmat dasturi (service application). Yengil virtualizatsiya ega bo'lish uchun konteyner (container) ishlab chiqilgan. Yaqin kelajakda, OSning yangi konsepti (turi), ya'ni bunday aytganda kutubxona OS (library OS) yoki Unikernel, hozirgi odatiy virtualizatsiyaga ishlatiladigan dasturlar (SoftWare) to'plamini o'rnini bosadi.
+* https://unikernel.org
+
+[Big Data](https://uz.wikipedia.org/wiki/Katta_hajmli_ma%CA%BClumot) va bulutli hisoblash judayam katta saqlash qurilmasi/tizimini talab qiladi. Serverlarga to'g'ridan-to'g'ri ulangan ba'zi disklar ularga shart bo'lgan hajm, stabillik va  faoliyat sifati talablarini qoniqtirolmaydi. Shuning uchun bir-biriga katta tezlikdagi tarmoq (high speed network) orqali ulangan ko'plab saqlash mashinalari orqali ulkan saqlash tizimlarini qurish borasida izlanishlar bo'lgan. Avvallari bitta ulkan saqlash tizimiga (volume) e'tibor berilardi. Lekin hozirdi yechim beruvchilar bizga ko'p virtual mashinalarga xoslangan ko'p saqlash hajmlarini (volume) taqdim etmoqda.
+* https://en.wikipedia.org/wiki/Software-defined_storage
+* https://en.wikipedia.org/wiki/Clustered_file_system
+* https://en.wikipedia.org/wiki/Ceph_(software)
+
+## Qanday boshlash kerak?
+
+Men qanday boshlash kerakligi borasida email habar oldim. Bu yerda kitoblar, kurslar, hamda loyihalar borasida ko'p ma'lumotlar keltirilgan. Qanday boshlas haqida yozishni unutish bu mening xatoyim. Afsuski, bu yerda [King's Landing](https://gameofthrones.fandom.com/wiki/King%27s_Landing)'ga olib boradigan King's Road yo'q. Men shunchaki o'zim nima qilganimni ketma-ketlikda yozaman. Agar Siz undan bir narsani qilib bo'lgan bo'lsangiz, iltimos, shunchaki o'tkazib yuboring. YANA ESLATAMAN, bu Siz qayerdan boshlashni yoki nima qilishni bilmay turganingizda shu tartibda qilib borishingiz mumkin bo'lgan bir na'muna xolos.
+
+- Operatsion Tizim Nazariyasi boo'yicha kitob o'qish: eng kamida "The Design of the UNIX Operating System by Maurice J. Bach"
+- Assembly va C'ni o'rganing
+	- [8086 assembly programming with emu8086](https://github.com/gurugio/book_assembly_8086)
+		- Assembly dasturlash tushunchasini tusunishingiz yetarli. Biror amaliy narsa qilishingiz shart emas.
+	- [The C Programming Language 2nd Edition](https://www.amazon.com/Programming-Language-Brian-W-Kernighan/dp/0131103628/ref=pd_sbs_14_t_0?_encoding=UTF8&psc=1&refRID=60R1D2CHBA8DHYT6JNMN)
+		- Har bir mashqni ishlash uchun QO'LINGIZDAN KELGANINI QILING!
+	- [C Programming: A Modern Approach, 2nd Edition](https://www.amazon.com/C-Programming-Modern-Approach-2nd/dp/0393979504)
+- C bilan biror amaliy (practical) narsa qiling
+	- [C Project Based Tutorials?](https://www.reddit.com/r/C_Programming/comments/872rlt/c_project_based_tutorials/): O'zingiz qiziq bo'lgan bir yoki ikki loyihalarni tanlang va o'zingizning loyihangizni qiling.
+	- [leetcode.com](https://leetcode.com/): agarda Siz biror qiziq loyiha topolmasangiz, unda ma'lumotlar tuzilmalari va algoritmlarga e'tiborni qaratish (focus) yaxshi.
+- Birorta Hardware loyiha qiling
+	- RaspberryPi yoki Arduino -- farqi yo'q. Sizga hardware faqatgina C bilan to'g'ridan to'g'ri boshqarish tajribasi kerak. FAQAT C BILAN!
+- 
