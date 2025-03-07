@@ -79,7 +79,8 @@ Endi Sizga o'zim o'qigan bir necha kitoblarni tanishtirsam. Bu kitoblar odatda u
 		* Siz o'zingizning 8086 to'plamingizni yasaganda esa, Sizda har bir periferik qurilmani jismoniy xotiraga o'zingiz joylashtira olishingiz (locate on the physical memory) imkoniyati bor. Hamda, HW qismlarining eng asosiylari (BUS, IRQ, Clock, Power[ Quvvat ta'minoti ] va h.k.) qanday ishlashini o'z ko'zlaringiz bilan ko'ra olasiz.
 		* Men o'zimning 8086 to'plamimni universitetda yasaganman. U men olgan kurslarning eng qimmatlilaridan bo'lgan. O'zingizning HW to'plamingizni yaratishga urinib ko'ring. U eski va oddiyroq bo'lsa yanayam yaxsi bo'ladi, chunki ko'p narsani Siz o'zingiz qilishingiz kerak.
 		* "8086 kit" deb Google'dan qidiring. Siz HW sxema, qismlari va qo'llanmalarni sotib olish uchun bir qancha veb-saytlar topishingiz mumkin.
-Hozirda yaxshi kitoblarning son-sanog'ii yo'q. Men Sizni ko'p kitob o'qishingiz kerak demoqchi emas. Bitta kitobning o'qing, uni uqib o'qing. Qachonki bir nazariya o'rgansangiz, uni simulyatsiya qiladigan kodni yozing (implement). Bir narsani yasash (implementing) yuzta nazariya bilishdan afzaldir.
+
+Hozirda yaxshi kitoblarning son-sanog'ii yo'q. Men Sizni ko'p kitob o'qishingiz kerak demoqchi emas. Bitta kitobning o'qing, uni uqib o'qing. Qachonki bir nazariya o'rgansangiz, uni simulyatsiya qiladigan kodni yozing (implement). **Bir narsani yasash (implementing) yuzta nazariya bilishdan afzaldir.**
 
 ## Tillar
 
@@ -174,4 +175,120 @@ Agar siz embedded tizimlar muhandisi bo'lishni istasangiz, eng oxirgi  ARM chips
 
 * [Arduino Start Kit](https://www.arduino.cc/)
 	* Arduinolarning ko'p versiyalari bor. Ammo ulardan eng sodda protessor (ATmega328P) va qo'llanma kitobiga ega bo'lgani "Arduino Start Kit" hisoblanadi
-	* ATmega328Pda 8-bit yadro borligi uni raqamli sxemani (digital circuit) dizay qilishni va firmware (o'rnatilgan dasturiy ta'minot) rivojlantirishni boshlashda yaxshi boshlanish nuqtasi qiladi
+	* ATmega328Pda 8-bit yadro borligi uni raqamli sxemani (digital circuit) dizay qilishni va firmware (o'rnatilgan dasturiy ta'minot) rivojlantirishni yaxshi boshlanish nuqtasi qiladi
+	* Siz sxemalarni va maketlarni (layouts) chizishni va chiplarni yig'ishni (assemble) bilishingiz shart emas.
+	* Lekin sxemalarni qanday oq'ish va chiqplar qanday bog'langanligini tushunishingiz albatta zarur.
+	* Firmware dasturchilar sxemalarni o'qiy olishi va bundan ma'lumotlarni qanday qilib mo'ljallangan qurilmalarga jo'natishni anglab ola bilishi kerak.
+	* Qo'llanmaga ergashing!
+* [8086 qo'llanmasi ----  8086 manual](https://edge.edx.org/c4x/BITSPilani/EEE231/asset/8086_family_Users_Manual_1_.pdf)
+	* Agar Siz x86 arxitekturasiga yangi bo'lsangiz, 8086 ham protsessor arxitekturasi va x86 assembly uchun juda yaxshi qo'llanma
+* [80386 qo'llanmasi  ----  80386 manual](http://css.csail.mit.edu/6.858/2015/readings/i386.pdf)
+	* 80x86 protsessorining `protected mode` (himoyalangan rejim) va `paging mechanism` (sahifalash mexanizmi) uchun eng zo'r qo'llanma
+	* Veb versiya: https://pdos.csail.mit.edu/6.828/2011/readings/i386/toc.htm
+
+Bu yerga kelgach, Siz eng so'nggi ARM va x86 protessorini ishlatishni boshlashingiz mumkin:
+* https://www.raspberrypi.org/
+* https://beagleboard.org/
+* https://www.arduino.cc/en/ArduinoCertified/IntelEdison
+
+Misol uchun, Raspberry Pi platase 64-bit instruksiya to'plamini (instruction set) qo'llab-quvvatlovchi Cortex-A53 Protsessoriga ega.
+Bu Sizga rPi orqali zamonaviy protsessorning arxitekturasi bilan tnaishishingiz imkonini beradi.
+Ha, Siz uni sotib ololasiz.... ammo.... u bilan nima qilmoqchisiz?
+Agar Sizning biror ko'zlagan loyihangiz bo'lmasa, katta ehtimol bilan Siz platani javonga solasizda va uni boshqa avvallari sotib olgan qurilmalaringiz kabi unutib yuborasiz.
+
+Shuning uchun men Sizga bir loyihani tavsiya qilaman.
+* [O'zingizning kernelingizni yasash  ----  Making your own kernel](http://wiki.osdev.org/Getting_Started)
+	* Qo'shimcha yaxshi manbalar: https://www.reddit.com/r/osdev/
+* [Linux kernel va Raspberry Pi bilan Operatsion Tizim rivojlantirishni o'rganish  ----  Learning operating system development using Linux kernel and Raspberry Pi](https://github.com/s-matyukevich/raspberry-pi-os)
+	* (loyihaning tavsifi) Bu repozitoriya noldan sodda operatsion tizim yaratish bo'yicha qadamma-qadam o'rgatadigan qo'llanmani o'z ichiga oladi... (o'tkazib yuboring)...Har bir dars shunday tuzilganki, birinchi navbatda kernelning ma'lum bir funksiyasi RPi OS'da qanday implementatsiya qilingani tushuntiriladi va so'ngra xuddi o'sha Linux kernelida qanday ishlashini ko'rsatishga uriniladi.
+
+Men o'zimning 64-bit long rejimi (64-bit long mode), sahifalash (paging) va sodda kontekst almashinuvini (context switching) qo'llab quvvatlovchi [kernelchamni](https://github.com/gurugio/caos) yasab ko'rganman. O'z kernelchangizni yasan ko'rish zamonaviy kompyuter arxitekturasini va hardware boshqaruvini tushunishni yaxshi yo'li.
+
+Darhaqiqat, Sizda eng so'nggi protsessor va eng so'nggi hardware qurilmalari bor. Sizning laptopingiz! Sizni desktopingiz! Siz boshlash uchun hamma narsa muhayyo!
+Sizhech hech narsa sotib olishingiz shartmas.
+Qemu emulatori eng so'nggi ARM va Intel protessorlarini emulyasiya qila oladi.
+Demak, Sizga kerak bo'lgan barcha narsa qo'lingizda tayyor turibdi.
+Siz foydalanishingiz uchun hozirda ko'plab kernelchalar va dokumentlar bor.
+Shunchaki qemu emulatorini o'rnating va o'zingizning kichik ishga tushadigan (boots), sahifalashni yoqadigan (turns on paging) va bir qancha habarlarni chop etadigan kernelingizni yasang.
+
+Boshqa kernelchalar:
+* https://littleosbook.github.io/
+* https://tuhdo.github.io/os01/
+
+### Linux kerneli va qurilma drayverlari
+
+Siz butun boshli operatsion tizim qurishingiz shart emas.
+Linux hamjamiyatiga qo'shiling va rivojlantirishda ishtirok eting.
+
+Boshlang'ichdan yuqorigacha (advanced) bo'lgan Linux kerneli va qurilma drayverlarini rivojlantirish bo'yicha resurslar.
+* Kitoblar: Ularni ushbu tartibda o'qing
+	* Unix OS'ning Dizayni  ----   [The Design of the Unix Operating System](https://www.amazon.com/Design-UNIX-Operating-System/dp/0132017997)
+		* Unix'ning asosiy tushunchalari barcha operatsion tizimlarga taalluqlidir.
+		* Bu kitob operatsion tizimlarning eng asosiy tushunchalarni o'rganish uchun judayam yaxshi joy.
+	* Linux Qurilma Drayverlari  ----  [Linux Device Drivers](https://www.amazon.com/Linux-Device-Drivers-Jonathan-Corbet/dp/0596005903/ref=sr_1_4?ie=UTF8&qid=1483650712&sr=8-4&keywords=understanding+linux+kernel)
+		* Barcha na'munalarni o'zingiz qilib ko'ring
+	* Linux Kernelini Yasah  ----  [Linux Kernel Development](https://www.amazon.com/Linux-Kernel-Development-Robert-Love/dp/0672329468/ref=sr_1_2?ie=UTF8&qid=1483650712&sr=8-2&keywords=understanding+linux+kernel)
+		* Linux kerneli dizaynini tushuning
+	* Linux Kernelini Tushunish  ----  [Understanding the Linux Kernel](https://www.amazon.com/Understanding-Linux-Kernel-Third-Daniel/dp/0596005652/ref=sr_1_1?ie=UTF8&qid=1483650712&sr=8-1&keywords=understanding+linux+kernel)
+		* Ushbu kitobni o'qish bilan bir vaqtda Linux kernelinig v2.6'sining manba kodini birga o'qing
+		* Hech qachon eng so'nggi versiya bilan boshlamang, v2.6 yetadi!
+		* Qemu va gdb'ni ishlatgan holda kernel kodini satrma-satr yurgizing
+			* http://stackoverflow.com/questions/11408041/how-to-debug-the-linux-kernel-with-gdb-and-qemu
+			* https://github.com/gurugio/linuxdeveloptip/blob/master/qemu-gdb-kdump.md
+		* busybox'ni ishga tushish (boot) uchun faqatgina bir soniya oladigan eng sodda file tizimini (filesystem) yasash uchun ishlating 
+			* https://github.com/gurugio/linuxdeveloptip/blob/master/minikernelwithbusybox.md
+* Boshqa resurslar: Men tavsiya qiladigan bepul manbalar
+	* Linux qurilma drayveri laboratoriyasi  ----   [Linux device driver labs](https://linux-kernel-labs.github.io/)
+		* Asosiy kernel API'lari bilan Linux qurilma drayverlarini yasayotgan amaliy qo'llanma va ajoyib topshiriqlar
+		* Mening fikrimcha bu dokument kernel API'larining barcha eng muhim qismlarini tanishtiradi
+	* [The Eudyptula Challenge](http://eudyptula-challenge.org/)
+		* _Afsuski, bu chellenj yangi ishtirokchilarni qabul qilolmaydi, sababi bu yerda boshqa chellenj yo'q._ Uning boshqaruvchisi aytdiki, u yangi format bilan chiqarishni rejalashtirmoqda ekan. Umid qilaman bu tez orada qaytadi.
+			* Lekin Siz chellenjning savollarini Google'dan qidirib topishingiz mumkin. Ba'zi odamlar o'zlarining qilgan ishlarini joylashga ulgurib bo'ldi. Savollarni toping va ularni mustaqil yechishga urining. Keyin esa o'zingizning yechimingizni boshqalarniki bilan solistiring.
+		* Bu xuddi Sizni ishingizda yo'naltirib turadigan shaxsiy o'qituvchingizga o'xshaydi.
+		* Agar Siz nima qilishni bilmasangiz, shunchaki shuni boshlang.
+	* Linux kernel va Raspberry Pi ishlatgan holda OS yasash  ----  [Learning operating system development using Linux kernel and Raspberry Pi](https://github.com/s-matyukevich/raspberry-pi-os)
+		* Bu loyiha hali tugallanmagan.
+		* Men har doim o'ylaymanki, Linux kerneliga o'xsash kernelni yasab ko'rish Linux kernelini tushunishning eng zo'r yo'li.
+	* Blok qatlami va qurilma drayveri  ----  [Block layer and device driver](https://github.com/gurugio/book_linuxkernel_blockdrv)
+		* Multi-queue rejimida ishlaydigan sodda blok qurilmasi drayveri na'munasidan (Ramdisk) boshlang
+		* Keyin blok qatlamiga (block layer) o'ting
+		* Men ingliz tiliga tarjima qilishni yakunladim. Iltimos, o'zingizning taklifingizni menga yuboring.
+	* Linuxning md drayveri (Koreas tilida) [md driver of Linux kernel(Korean)](https://github.com/gurugio/book_linuxkernel_md)
+		* mdadm asbobi (tool) qanday ishaydi va u qanday qilib md drayverini chaqirishi (call) haqida
+		* md drayveri qanday ishlashi haqida
+	* Lionning UNIX 6-versiyasi bo'yicha Izohi, Maba Kodi bilan  ----  [Lions' Commentary on UNIX 6th Edition, with Source Code](https://en.wikipedia.org/wiki/Lions%27_Commentary_on_UNIX_6th_Edition,_with_Source_Code)
+
+#### Qo'shimcha adabiyotlar
+
+Bularni Sizga biror narsa kerak bo'lganida tekshirib ko'ring
+* [Free-electrons homepage](http://free-electrons.com/docs/)
+	* bu yerda yaxshi mavzularni, ayniqsa ARM-linuxni, tanishtiradigan ko'p slayd fayllari bor
+* Julia Evansning blog posti: Siz kernel hakeri bo'la olasiz!  ----   [Julia Evans's posting: You can be a kernel hacker!](http://jvns.ca/blog/2014/09/18/you-can-be-a-kernel-hacker/)
+	* kernel dasturlashni boshlash uchun qo'llanma
+
+### Boshqa tatbiqlar
+
+Ha, Siz Linux yoki firmware'ga qiziqmasligingiz mumkin. Agar shunday bo'lsa, Siz bu bilimlar/ko'nikmalar ishlatiladigan boshqa tatbiqlarni topishingiz mumkin:
+- Windows tizim dasturlashi & qurilma drayverlari
+- Xavfsizlik
+- Reverse injiniring
+
+Menda bu tatbiqlar bo'yicha hech qanday bilim yo'q. Iltimos, menga boshlang'ichlar uchun har qanday ma'lumotni jo'nating.
+
+**Kernel va drayverlar quyi-daraja dasturlashining hamma qismi emas.** Quyi-daraja dasturlashning yana bir muhim tatbiqi bu dastur tomonidan belgilangan xotira (software-defined storage) yoki taqsimlangan fayl tizimidir (distributed filesystem). Ular haqida detallashtirilgan tavsif bu dokumentning qamrovidan chetda, lekin Siz sodda taqsimlangan fayl tizimini sinab ko'rishingiz mumkin bo'lgan bir kurs bor.
+* Kurs (ingliz tilida): https://pdos.csail.mit.edu/archive/6.824-2012/
+* Qo'llanma manbasi (kursga bog'liq): https://github.com/srned/yfs
+
+## Quyi-daraja dasturlashining kelajagi
+
+Men keljakni bilmayman, lekin e'tiborimni Rust'ga qaratib turaman.
+* https://hacks.mozilla.org/2016/11/rust-and-the-future-of-systems-programming/
+
+Agar menda to'liq bo'sh bir hafta yakka bo'lganimda, men Rustni o'rgangan bo'lardim.
+Buning sababi Rust men Linux qurilma drayverlarini yasashim uchun eng so'nggi dastulash tilidir.
+* https://github.com/tsgates/rust.ko
+
+IoT yangi trend. Shu tufayli unga qanday OS'lar ishlatilishi ko'rib chiqishga arziydi.
+ARM, Samsumng va bohqa kompaniyalar o'zining real-vaqtda ishlaydigan OS'ga ega. Ammo, afsuski, ularning ko'p yopiq manbali.
+Lekin Linux Foundation'ning yechimi bor: Zephyr
+* https://www.zephyrproject.org/
