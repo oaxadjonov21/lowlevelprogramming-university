@@ -1,5 +1,8 @@
 {
   "interfaceFontFamily": "Ubuntu Sans",
   "textFontFamily": "Ubuntu Sans",
-  "baseFontSize": 18
+  "baseFontSize": 18,
+  "cssTheme": "",
+  "theme": "moonstone",
+  "accentColor": "#b3a400"
 }
