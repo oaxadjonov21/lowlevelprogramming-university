@@ -27,7 +27,7 @@ DIQQAT 3: Agar Siz tezroq boshlashni istasangiz, "Qanday boshlash kerak?" bo'lim
 
 ## Bu o'zi nima?
 
-Men [Google Intervyu Universitetigoogle-interview-university](https://github.com/jwasham/coding-interview-university)dan ilhomlanganman. Bu mahorat/bilimlar avvalgiga nisbatan hozir kamyob bo'lganligi uchun, men o'zimning tajribamni ulashmoqchiman hamda quyi-daraja dasturchisi bo'lishdagi yo'lni ko'rsatmoqchiman. Shuningdek, ko'p student va yangi boshlovchilar mendan qanday qilib quyi-daraja dasturchisi va Linux kerneli muhandislari bo'lish haqi ko'p so'rashadi.
+Men [Google Intervyu Universitetigoogle-interview-university](https://github.com/jwasham/coding-interview-university)dan ilhomlanganman. Bu mahorat/bilimlar avvalgiga nisbatan hozir kamyob bo'lganligi uchun, men o'zimning tajribamni ulashmoqchiman hamda quyi-daraja dasturchisi bo'lishdagi yo'lni ko'rsatmoqchiman. Shuningdek, ko'p student va yangi boshlovchilar mendan qanday qilib quyi-daraja dasturchisi va Linux kerneli muhandislari bo'lish haqida ko'p so'rashadi.
 
 Bu sahifa hamma havola/kitob/kurslarni o'z ichiga ololmaydi. Misol uchun, ushbu sahifada Arduino tanishtirilgan bo'lsada, bu yerda u va embedded tizimlar haqida chuqur ma'lumot yo'q.  Siz o'zingiz mustaqil chuqurroq o'rganishingiz kerak. Sizda boshlash uchun "Arduino" kalit so'zi bor. Demak, Sizning keyingi qadamlaringiz havolalar va bepul kitoblarni yig'ib yurish emas, balki "Arduino" deb Google'dan qidirishingiz, [Arduino] to'plam sotib olishingiz, va o'zingiz uchun nimadur qilishingiz bo'lishi mumkin. Iltimos bu sahifa yangi boshlovchilar uchun yo'riqnoma ekanligini unutmang.
 
@@ -317,4 +317,54 @@ Men qanday boshlash kerakligi borasida email habar oldim. Bu yerda kitoblar, kur
 	- [leetcode.com](https://leetcode.com/): agarda Siz biror qiziq loyiha topolmasangiz, unda ma'lumotlar tuzilmalari va algoritmlarga e'tiborni qaratish (focus) yaxshi.
 - Birorta Hardware loyiha qiling
 	- RaspberryPi yoki Arduino -- farqi yo'q. Sizga hardware faqatgina C bilan to'g'ridan to'g'ri boshqarish tajribasi kerak. FAQAT C BILAN!
-- 
+	- Mening tavsiyam shuki, ATmega128 to'plamini sotib oling va LEDlarni yoqib/o'chirishga, svitch kiritishini (input) aniqlashga va LCD displeyiga habar chiqarishga firmware yasang. Motorni boshqaradigan dastur ham juda yaxshi loyiha: masalan, chiziq bo'ylab yuruvchi.
+	- Birorta ham kutubxona ISHLATMANG. Dasturni hardware'ga yuklovchidan boshqa hamma narsani o'zingiz qilishingiz kerak.
+- Linux kerneli asoslari
+	- Quyi-daraja dasturlashi operatsion tizimga judayam yaqin. Siz OS ichida nima bo'lishini bilishingiz kerak.
+	- Drayverlar bilan boshlang
+		- [Linux Device Drivers](https://www.amazon.com/Linux-Device-Drivers-Jonathan-Corbet/dp/0596005903/ref=sr_1_4?ie=UTF8&qid=1483650712&sr=8-4&keywords=understanding+linux+kernel) kitobini o'qing.
+		- [Linux device driver labs](https://linux-kernel-labs.github.io/)
+		- [The Eudyptula Challenge](http://eudyptula-challenge.org/)
+	- Linux kernel ichki qismni o'rganish uchun [Linux Kernel Development](https://www.amazon.com/Linux-Kernel-Development-Robert-Love/dp/0672329468/ref=sr_1_2?ie=UTF8&qid=1483650712&sr=8-2&keywords=understanding+linux+kernel) kitobini o'qing.
+- Professional sohaga kiring
+	- Agar professional Linux Kernel Dasturchisi bo'lishni istasangiz
+		- [Understanding the Linux Kernel](https://www.amazon.com/Understanding-Linux-Kernel-Third-Daniel/dp/0596005652/ref=sr_1_1?ie=UTF8&qid=1483650712&sr=8-1&keywords=understanding+linux+kernel) kitobini albatta o'qishingiz shart
+			- So'ng kernelcha yasashga urinib ko'ring
+			-  [Learn operating system development using Linux kernel and Raspberry Pi](https://github.com/s-matyukevich/raspberry-pi-os)
+			- [Making your own kernel](http://wiki.osdev.org/Getting_Started)
+			- Kernelingizning github linkni rezyumeingizga qo'shib qo'ying (Commit habarlarida batafsil tavsif yozishni unutmang)
+		- https://lwn.net/ da eng so'nggi muammolarni tekshiring va qo'shiling
+			- "https://lwn.net/Kernel/" da yoki to'g'ridan-to'g'ri https://lwn.net/Kernel/Patches da "Recent kernel patches" bo'limini tekshiring
+			- O'zingizga qiziq bo'lgan "patch"ni tanlang. Uning manba kodini tushunishga harakat qiling. Albatta, bu judayam qiyin bo'ladi, lekin urinib ko'ring. Uringaningiz sari yaqinlashib boraverasiz.
+			- Kernelni "build" qiling (ishlatishga tayyor holatga keltiring) va o'zingizning tizimingizda test qilib ko'ring. Misol uchun, faoliyat sifati tests, LTP(https://linux-test-project.github.io/) yoki kernel ichidagi instrumentlar ustida statik kod analizi o'tkazing.
+			- Har qanday muammo chiqsa habar bering: kompilyatsiya ogohlantirishlari(compile warnings)/xatolari(errors); faoliyat sifatida pastlash; kernel panic/oops yoki har qanday muammolar
+			- Agar u yaxshi ishlasa, tizimingizni harakateristika bilan qo'shib hisobot/habar bering. Patch'ning egasi Sizning ismingiz bilan "Reviewed-by", ya'ni ko'rib chiqildi, belgilashini (tag) yozishi mumkin.
+			- O'zingizning ismingizni kernelning `git log`'idan toping
+	- Yoki boshqa mavzularni toping
+		- Quyi-daraja muhandisi ishlashi mumkin bo'lgan ko'plab sohalar bor: xavfsizlik, Kompaylerlar, Firmware, robot/mashina va h.k.
+
+# Tarjimalar
+Iltimos, agar Siz bu sahifani tarjima qilishni istasangiz, menga `pull request` yuboring. Men uni bu ro'yxatga qo'shib qo'yaman.
+
+* [Xitoy (An'anaviy)](https://github.com/gurugio/lowlevelprogramming-university/blob/master/README_tw.md)
+* [Xitoy (Soddalashtirilgan)](https://github.com/gurugio/lowlevelprogramming-university/blob/master/README_cn.md)
+* [Braziliya Portugal](https://github.com/gurugio/lowlevelprogramming-university/blob/master/README_pt.md)
+* [Italyan](https://github.com/gurugio/lowlevelprogramming-university/blob/master/README_it.md)
+* [Chex](https://github.com/gurugio/lowlevelprogramming-university/blob/master/README_cz.md)
+* [Rus](https://github.com/gurugio/lowlevelprogramming-university/blob/master/README_ru.md)
+* [Turk](https://github.com/gurugio/lowlevelprogramming-university/blob/master/README_tr.md)
+* [Fors](https://github.com/gurugio/lowlevelprogramming-university/blob/master/README_fa.md)
+* [Ispan](https://github.com/gurugio/lowlevelprogramming-university/blob/master/README_es.md)
+* [Fransuz](https://github.com/gurugio/lowlevelprogramming-university/blob/master/README_fr.md)
+
+# Men kimman?
+
+Men [Google Intervyu Universitetigoogle-interview-university](https://github.com/jwasham/coding-interview-university)dan ilhomlanganman. Bu mahorat/bilimlar avvalgiga nisbatan hozir kamyob bo'lganligi uchun, men o'zimning tajribamni ulashmoqchiman hamda quyi-daraja dasturchisi bo'lishdagi yo'lni ko'rsatmoqchiman. Shuningdek, ko'p student va yangi boshlovchilar mendan qanday qilib quyi-daraja dasturchisi va Linux kerneli muhandislari bo'lish haqida ko'p so'rashadi.
+
+Ma'lumot uchun, men 10 yildan oshiq tajribaga ega quyi-daraja dasturchisiman:
+* 80x86 Assembly dasturlash
+* ATmel chiplari bilan hardware qurilmalari va firmware
+* Uni uchun C tilida tizim dasturlash
+* Linuxda qurilma drayveri
+* Linux kernel: sahifa ajratish (page allocation)
+* Linux kernel: blok qurilmasi drayveri (block device driver) va `md` moduli
