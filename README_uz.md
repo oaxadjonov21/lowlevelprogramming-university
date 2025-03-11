@@ -201,7 +201,7 @@ Shuning uchun men Sizga bir loyihani tavsiya qilaman.
 * [O'zingizning kernelingizni yasash  ----  Making your own kernel](http://wiki.osdev.org/Getting_Started)
 	* Qo'shimcha yaxshi manbalar: https://www.reddit.com/r/osdev/
 * [Linux kernel va Raspberry Pi bilan Operatsion Tizim rivojlantirishni o'rganish  ----  Learning operating system development using Linux kernel and Raspberry Pi](https://github.com/s-matyukevich/raspberry-pi-os)
-	* (loyihaning tavsifi) Bu repozitoriya noldan sodda operatsion tizim yaratish bo'yicha qadamma-qadam o'rgatadigan qo'llanmani o'z ichiga oladi... Har bir dars shunday tuzilganki, birinchi navbatda kernelning ma'lum bir funksiyasi RPi OS'da qanday implementatsiya qilinganini tushuntiradi va so'ngra xuddi o'sha funksiya Linux kernelida qanday ishlashini ko'rsatishga harakat qiladi.
+	* (loyihaning tavsifi) Bu repozitoriya noldan sodda operatsion tizim yaratish bo'yicha qadamma-qadam o'rgatadigan qo'llanmani o'z ichiga oladi...(qism olib tashlandi)...Har bir dars shunday tuzilganki, birinchi navbatda kernelning ma'lum bir funksiyasi RPi OS'da qanday implementatsiya qilinganini tushuntiradi va so'ngra xuddi o'sha funksiya Linux kernelida qanday ishlashini ko'rsatishga harakat qiladi.
 
 Men o'zimning 64-bit long rejimi (64-bit long mode), sahifalash (paging) va sodda kontekst almashinuvini (context switching) qo'llab quvvatlovchi [kernelchamni](https://github.com/gurugio/caos) yasab ko'rganman. O'z kernelchangizni yasab ko'rish zamonaviy kompyuter arxitekturasini va hardware boshqaruvini tushunishni yaxshi yo'li hisoblanadi.
 
@@ -337,8 +337,8 @@ Men qanday boshlash kerakligi borasida email habar oldim. Bu yerda kitoblar, kur
 		- https://lwn.net/ da eng so'nggi muammolarni tekshiring va unga qo'shiling
 			- "https://lwn.net/Kernel/" da yoki to'g'ridan-to'g'ri https://lwn.net/Kernel/Patches da "Recent kernel patches" bo'limini tekshiring
 			- O'zingizga qiziq bo'lgan "patch"ni tanlang. Uning manba kodini tushunishga harakat qiling. Albatta, bu judayam qiyin bo'ladi, lekin urinib ko'ring. Uringaningiz sari yaqinlashib boraverasiz.
-			- Kernelni "build" qiling (ishlatishga tayyor holatga keltiring) va o'zingizning tizimingizda test qilib ko'ring. Misol uchun, faoliyat sifati testi, LTP(https://linux-test-project.github.io/) yoki kernel ichidagi instrumentlar ustida statik kod analizi o'tkazing.
-			- Har qanday muammo chiqsa habar bering: kompilyatsiya ogohlantirishlari(compile warnings)/xatolari(errors); faoliyat sifatida pastlash; kernel panic/oops yoki har qanday muammolar
+			- Kernelni "build" qiling (ishlatishga tayyor holatga keltiring) va o'zingizning tizimingizda test qilib ko'ring. Misol uchun, LTP'da (https://linux-test-project.github.io/) faoliyat sifati (performance) va stabillik testlarini yurgizib ko'rishingiz mumkin. Hamda kernelning o'zida ham ko'plab test instrumentlari (tools) bor (https://www.kernel.org/doc/html/latest/dev-tools/index.html).
+			- Har qanaqa muammo chiqsa habar bering: kompilyatsiya ogohlantirishlari(compile warnings)/xatolari(errors); faoliyat sifatida pastlash; kernel panic/oops yoki har qanday muammolar
 			- Agar u yaxshi ishlasa, tizimingizni harakateristikasi bilan qo'shib hisobot/habar bering. Patch'ning egasi Sizning ismingiz bilan "Reviewed-by", ya'ni ko'rib chiqildi, belgilashini (tag) yozishi mumkin.
 			- O'zingizning ismingizni kernelning `git log`'idan toping
 	- Yoki boshqa mavzularni toping
