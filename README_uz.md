@@ -1,6 +1,6 @@
-DIQQAT 1: Iltimos, ushbu sahifadagi kontentni blogingizga ko'chirmang. Siz bu sahifani ulashishingiz mumkin, ammo, iltimos, uni asl havolasi (link) bilan ulashing. Bu bizning yaxshi dokument hamda ochiq manbali loyihalar egalari (avtor) uchun bo'lgan odobimizdir.
+DIQQAT 1: Iltimos, ushbu sahifadagi kontentni blogingizga ko'chirmang. Siz bu sahifani ulashishingiz mumkin, ammo, iltimos, uni asl havolasi (link) bilan ulashing. Bu bizning yaxshi hujjat hamda ochiq manbali loyihalar egalari (avtor) uchun bo'lgan odobimizdir.
 
-DIQQAT 2: Iltimos, shunga e'tibor bering-ki, hozirda quyi-daraja dasturlashi trendda emas va bunday dasturchini ishga olayotgan kompaniyalar ko'p emas. Menga ham ish topish qiyinlashib bormoqda.
+DIQQAT 2: Iltimos, shunga e'tibor beringki, hozirda quyi-daraja dasturlashi trendda emas va bunday dasturchini ishga olayotgan kompaniyalar ko'p emas. Menga ham ish topish qiyinlashib bormoqda.
 Agar Siz hali professional karyerangizni boshlamagan bo'lsangiz, Sizga boshqa yo'nalishlarni ko'rib chiqishingizni maslahat bergan bo'lardim.
 
 DIQQAT 3: Agar Siz tezroq boshlashni istasangiz, "Qanday boshlash kerak?" bo'limiga o'ting.
@@ -27,18 +27,18 @@ DIQQAT 3: Agar Siz tezroq boshlashni istasangiz, "Qanday boshlash kerak?" bo'lim
 
 ## Bu nima?
 
-Men [Google Intervyu Universiteti](https://github.com/jwasham/coding-interview-university)dan ilhomlanganman. Bu mahorat/bilimlar avvalgiga nisbatan hozir kamyob bo'lganligi uchun, men o'zimning tajribamni ulashmoqchiman hamda quyi-daraja dasturchisi bo'lishdagi yo'lni ko'rsatmoqchiman. Shuningdek, ko'p student va yangi boshlovchilar mendan qanday qilib quyi-daraja dasturchisi va Linux kerneli muhandislari bo'lish haqida ko'p so'rashadi.
+Men [Google Intervyu Universiteti](https://github.com/jwasham/coding-interview-university)dan ilhomlanganman. Bu mahorat/bilimlar avvalgiga nisbatan hozir kamyob bo'lganligi uchun, men o'zimning tajribamni ulashmoqchiman hamda quyi-daraja dasturchisi bo'lishdagi yo'lni ko'rsatmoqchiman. Shuningdek, ko'p talaba va yangi boshlovchilar mendan qanday qilib quyi-daraja dasturchisi va Linux kerneli muhandislari bo'lish haqida ko'p so'rashadi.
 
 Bu sahifa hamma havola/kitob/kurslarni o'z ichiga ololmaydi. Misol uchun, ushbu sahifada Arduino tanishtirilgan bo'lsada, bu yerda u va o'rnatilgan (embedded) tizimlar haqida chuqur ma'lumot yo'q.  Siz o'zingiz mustaqil chuqurroq o'rganishingiz kerak. Sizda boshlash uchun "Arduino" kalit so'zi bor. Demak, Sizning keyingi qadamlaringiz havolalar va bepul kitoblarni yig'ib yurish emas, balki "Arduino" deb Google'dan qidirishingiz, [Arduino] to'plam sotib olishingiz, va o'zingiz uchun nimadur qilishingiz bo'lishi mumkin. Iltimos bu sahifa yangi boshlovchilar uchun yo'riqnoma ekanligini unutmang.
 
-Quyi-daraja dasturlashi Kompyuter Fanining (Computer Science) bir qismidir.
-Umuman olganda, birinchi o'rinda Kompyuter Fani (Computer Science) bo'yicha bilim olinsa afzalroq bo'lar edi.
+Quyi-daraja dasturlashi Kompyuter Ta'limotining (Computer Science) bir qismidir.
+Umuman olganda, birinchi o'rinda Kompyuter Ta'limoti bo'yicha bilim olinsa afzalroq bo'lar edi.
 * [Kompyuter Fanini mustaqil va bepul o'rganish uchun yo'riqnoma (ingliz tilida)](ttps://github.com/ossu/computer-science)
 
 
 ## Quyi-daraja (low-level) nima?
 
-Men quyi-daraja dasturlashini C va assembly kabi quyi-daraja dasturlash tillari ishlatiladigan va mashinaga (kompyuter) yaqin bo'lgan dasturlash deb tasniflayman. Bu esa yuqori-darajadagi, odatda foydalanuvchi maydoni dasturlarida (user-space applications) namoyon bo'ladigan va yuqori-darajali dasturlash tillari (Python, Java kabilar) ishlatilinadigan dasturlashga teskaridir.
+Men quyi-daraja dasturlashini C va assembly kabi quyi-daraja dasturlash tillari ishlatiladigan va mashinaga (kompyuter) yaqin bo'lgan dasturlash deb ta'riflayman. Bu esa yuqori-darajadagi, odatda foydalanuvchi maydoni dasturlarida (user-space applications) namoyon bo'ladigan va yuqori-darajali dasturlash tillari (Python, Java kabilar) ishlatilinadigan dasturlashga teskaridir.
 * [Wikipedia: Quyi-daraja dasturlash tili (ingliz tilida)](https://en.wikipedia.org/wiki/Low-level_programming_language)
 
 Ha, tizim dasturlashi (systems programming) quyi-daraja dasturlashiga yaqin tushuncha. Bu sahifa tizim dasturlashida bo'lmagan ***hardware*** dizayni va ***firmware***ni rivojlantirishni o'z ichiga oladi.
@@ -48,13 +48,13 @@ Nihoyat, bu sahifa ***hardware*** qismlaridan tortib Linux kerneligacha bo'lga m
 
 ## Nazariya
 
-Quyi-daraja dasturlashiga asosiy tayanch nazariyalar ushbular hisoblanadi:
-* Kompyuter Arxitetkturasi
+Quyi-daraja dasturlashiga asosiy tayanch nazariy bilimlar ushbular hisoblanadi:
+* Kompyuter Arxitekturasi
 * Operatsion Tizimlar
 
 Menimcha nazariyani o'rganishning eng yaxshi yo'li bu kurs olishdir. Kitoblarni o'qish ham yomon yo'l emas-u, lekin juda ko'p vaqt va mehnat talab qiladi. Siz ko'plab yaxshi onlayn universitelardan ko'plab yaxshi darslarni topa olasiz. Misol uchun, Coursera.org va edx.org.
-Nazariya -- bu nazariya. Siz kursda A+ olishingiz kerak deb o'ylamayman. Shunchaki asosiy g'oyani tushuning.
-Tajribangiz ortgani sari bilimingiz/mahoratingiz ham yaxshilanib boadi.
+Nazariya baribir nazariya. Siz kursda A+ olishingiz kerak deb o'ylamayman. Shunchaki asosiy g'oyani tushuning.
+Tajribangiz ortgani sari bilimingiz/mahoratingiz ham yaxshilanib boradi.
 
 Endi Sizga o'zim o'qigan bir necha kitoblarni tanishtirsam. Bu kitoblar odatda universitetlarda darsliklar sifatida ishlatiladi. Agar Sizning universitetingizda bu kitoblar ishlatilgan kurslar bo'lmasa, vaqtingizning ma'lum bir qismini ularning mutolaasi bilan o'tkazsangiz arziydi.
 * Kompyuter Arxitekturasi
@@ -75,18 +75,18 @@ Endi Sizga o'zim o'qigan bir necha kitoblarni tanishtirsam. Bu kitoblar odatda u
 * Hardware Dizayni
 	* O'zingizning 8086 Mikroprotsessor to'plamingizni (kit) yasang
 		* Siz o'z o'zingizning Hardware platangizni qurmas ekansiz, jismoniy xotira biriktirilgan (memory-mapped) qurilma nima ekaligini bilolmaysiz.
-		* Zamonaviy dastur protsessorlari (Application Processor, AP) judayam ko'p Intellectual Property (IP) bloklariga ega. Shu tufayli, Sizda CPU va periferik (CPU ichida bo'lmagan lekin u bilan ishlaydigan) qurilmalar qanday bog'langanini tushunish ***deyarli*** imkonsiz
+		* Zamonaviy dastur protsessorlari (AP) judayam ko'p IP bloklariga ega, shuning uchun CPU yadrolari va periferik (CPU'ning bir qismi bo'lmagan) qurilmalar birga ishlash uchun qanday bog'langanini tushunishning deyarli imkoni yo'q.
 		* O'zingizning 8086 to'plamingizni yasaganingizda esa, Sizda har bir periferik qurilmani jismoniy xotiraga o'zingiz joylashtirishingiz (locate on the physical memory) imkoniyati bor. Hamda, HW qismlarining eng asosiylari (BUS, IRQ, Clock, Power va h.k.) qanday ishlashini o'z ko'zlaringiz bilan ko'ra olasiz.
 		* Men o'zimning 8086 to'plamimni universitetda yig'ganman. U men olgan kurslarning eng qimmatlilaridan biri edi. O'zingizning HW to'plamingizni yaratishga urinib ko'ring. U eski va oddiyroq bo'lsa yanayam yaxshi bo'ladi, chunki ko'p narsani Siz o'zingiz qilishingiz kerak (va shu tufayli ko'proq izlanib/or'ganishingiz kerak).
 		* Google'dan "8086 kit" deb  qidirsangiz, HW sxema, qismlar va qo'llanmalarni sotib olish uchun bir qancha veb-saytlar topishingiz mumkin.
 
-Hozirda yaxshi kitoblarning son-sanog'i yo'q. Men Sizni ko'p kitob o'qishingiz kerak demoqchi emasman. Aksincha, bitta kitobni judayam kuchli e'tibor bilan o'qing. Qachonki bir nazariya o'rgansangiz, uni simulyatsiya qiluvchi kodni yozib ko'ring. Boshqacha aytganda, nazariyani **implementatsiya** qiling. **Bir narsani amalda yasash -- yuzta nazariya bilishdan afzaldir.**
+Hozirda yaxshi kitoblarning son-sanog'i yo'q. Men Sizni ko'p kitob o'qishingiz kerak demoqchi emasman. Aksincha, bitta kitobni judayam kuchli e'tibor bilan o'qing. Qachonki bir nazariya o'rgansangiz, uni simulyatsiya qiluvchi kodni yozib ko'ring. Boshqacha aytganda, nazariyani **amaliyotda qo'llang**. **Bir narsani amalda qo'llash -- yuz xil nazariya bilishdan afzalroqdir.**
 
 ## Tillar
 
 ### Assembly
 
-x86 va ARM'lardan birini tanlang. Ikkisini ham bilishingiz shart emas. Assembly tilini bilish muhim ahamiyat kasb etmaydi. Eng muhimi CPU va kompyuterni ichki qismlarini (internals) tushunishdir. Shuning uchun Siz eng so'nggi CPU'larning assembly'sini ishlatishingizga hojat yo'q. 8086 yoki Cortex-M ni tanlang.
+x86 va ARM'lardan birini tanlang. Ikkisini ham bilish shart emas. Bu tanlovda ularning Assembly tilini bilishingiz muhim emas. Eng muhimi CPU va kompyuterni ichki qismlarini (internals) tushunishdir. Shuning uchun Siz eng so'nggi CPU'larning assembly'sini ishlatishingizga hojat yo'q. 8086 yoki Cortex-M ni tanlang.
 
 **Eslatma:** Berilgan havolalardagi resurslar ingliz tilida
 * [emu8086 bilan assembly dasturlash -- 8086 assembly programming with emu8086](https://github.com/gurugio/book_assembly_8086)
@@ -124,7 +124,7 @@ Bu yerda qisqa yo'l yo'q. Shunchaki butun kitobni o'qing va mashqlarni bajaring.
 * [Loyihaga asoslangan C tutoriallar?  ----  C Project Based Tutorials?](https://www.reddit.com/r/C_Programming/comments/872rlt/c_project_based_tutorials/)
 	* Agar Siz bir yo ikkita C dasturlash tili haqida kitob tugatsangiz, Siz ALBATTA nimadur qilishingiz/yasashingiz kerak.
 	* Xohlagan narsangizni tanlang.
-	* Dastlab, o'zingiznikini yasang va keyin boshqalarning kodi bilan solishtiring. O'zingizning kodingizni boshqalarniki bilan solishtirish judayam **muhim** ahamiyatga ega. Siz mahoratingizning faqat boshqalaring kodini o'qiganingizda va yaxshiroq usullarni o'rganganingizdagina yaxshilay olasiz. **Kitoblar o'lik, kodlar esa tirik** (ya'ni kodlar yangilanib, hozirgi zamonga moslanib aktuallikni saqlab tursa, kitoblar bunday emas).
+	* Dastlab, o'zingiznikini yasang va keyin boshqalarning kodi bilan solishtiring. O'zingizning kodingizni boshqalarniki bilan solishtirish judayam **muhim** ahamiyatga ega. Siz mahoratingizning faqat boshqalaring kodini o'qiganingizda va yaxshiroq usullarni o'rganganingizdagina yaxshilay olasiz. **Kitoblar jonsiz, kodlar esa jonli** (ya'ni kodlar yangilanib, hozirgi zamonga moslanib aktuallikni saqlab tursa, kitoblar bunday emas).
 * [C va boshqa tillar asosida loyhalar (Build Your Own X) ----  C and other languages based projects](https://github.com/danistefanovic/build-your-own-x)
 	* yanada qiziqarli loyihalar topish uchun
 * [Michael Abrash'ning Black Book bilan Grafik Dasturlashi  ----  Michael Abrash’s Graphics Programming Black Book, Special Edition](http://www.jagregory.com/abrash-black-book/)
@@ -139,7 +139,7 @@ Agar Siz C dasturlashda ekspert bo'lishni istasangiz, https://leetcode.com/ ga k
 
 ### Rust dasturlash tili
 
-Men aminmanki, tizim dasturlash uchun keyingi til bu Rust bo'ladi.
+Mening ishonchim komilki, tizim dasturlashi uchun keyingi til Rust bo'ladi.
 Rust'ni o'rganishda nima qilganimning ro'yxatini beraman.
 
 Linus Torvalds aytgan:  "Agar biror noodatiy holat bo'lib qolmasa, 6.1 Rust'da bo'ladi."  ----[Linus Torvalds said "Unless something odd happens, it [Rust] will make it into 6.1."](https://www.zdnet.com/article/linus-torvalds-rust-will-go-into-linux-6-1/)
@@ -168,14 +168,14 @@ Linus Torvalds aytgan:  "Agar biror noodatiy holat bo'lib qolmasa, 6.1 Rust'da b
 - [(Ish davom etmoqda) Rustda Linux qurilma drayverlari  ----  (Work In Progress) Linux Device Drivers in Rust](https://github.com/gurugio/rust-for-linux)
 	- "Linux device drivers" kitobidagi na'munalarni Rustda yasalishi.
 
-## Tatbiqlar
+## Qo'llanilish sohalari
 
 ### Hardware va Firmware
 
 Agar siz o'rnatilgan (embedded) tizimlar muhandisi bo'lishni istasangiz, eng oxirgi  ARM chipsetidan (mikrosxemalar to'plami) boshlagandan ko'ra eng yaxshisi oddiy hardware to'plamidan boshlashdir.
 
 * [Arduino Start Kit](https://www.arduino.cc/)
-	* Arduinolarning ko'p versiyalari bor. Ammo ulardan eng sodda protessor (ATmega328P) va qo'llanma kitobiga ega bo'lgani "Arduino Start Kit" hisoblanadi
+	* Arduinolarning ko'p talqinlari bor. Ammo ulardan eng sodda protessor (ATmega328P) va qo'llanma kitobiga ega bo'lgani "Arduino Start Kit" hisoblanadi
 	* ATmega328Pda 8-bit yadroli CPU borligi uni raqamli sxemani (digital circuit) dizayn qilishni va firmware (o'rnatilgan dasturiy ta'minot) rivojlantirishni yaxshi boshlanish nuqtasi qiladi
 	* Siz sxemalarni va maketlarni (layouts) chizishni va chiplarni yig'ishni (assemble) bilishingiz shart emas.
 	* Lekin sxemalarni qanday oq'ish va chiqplar qanday bog'langanligini tushunishingiz albatta zarur.
@@ -184,8 +184,8 @@ Agar siz o'rnatilgan (embedded) tizimlar muhandisi bo'lishni istasangiz, eng oxi
 * [8086 qo'llanmasi ----  8086 manual](https://edge.edx.org/c4x/BITSPilani/EEE231/asset/8086_family_Users_Manual_1_.pdf)
 	* Agar Siz x86 arxitekturasiga yangi bo'lsangiz, 8086 ham protsessor arxitekturasi va x86 assembly uchun juda yaxshi qo'llanma
 * [80386 qo'llanmasi  ----  80386 manual](http://css.csail.mit.edu/6.858/2015/readings/i386.pdf)
-	* 80x86 protsessorining `protected mode` (himoyalangan rejim) va `paging mechanism` (sahifalash mexanizmi) uchun eng zo'r qo'llanma
-	* Veb versiya: https://pdos.csail.mit.edu/6.828/2011/readings/i386/toc.htm
+	* 80x86 protsessorining `protected mode` (himoyalangan rejim) va `paging mechanism` uchun eng zo'r qo'llanma
+	* Veb ko'rinishda: https://pdos.csail.mit.edu/6.828/2011/readings/i386/toc.htm
 
 Bu yerga kelgach, Siz eng so'nggi ARM va x86 protessorini ishlatishni boshlashingiz mumkin.
 * https://www.raspberrypi.org/
@@ -203,14 +203,14 @@ Shuning uchun men Sizga bir loyihani tavsiya qilaman.
 * [Linux kernel va Raspberry Pi bilan Operatsion Tizim rivojlantirishni o'rganish  ----  Learning operating system development using Linux kernel and Raspberry Pi](https://github.com/s-matyukevich/raspberry-pi-os)
 	* (loyihaning tavsifi) Bu repozitoriya noldan sodda operatsion tizim yaratish bo'yicha qadamma-qadam o'rgatadigan qo'llanmani o'z ichiga oladi...(qism olib tashlandi)...Har bir dars shunday tuzilganki, birinchi navbatda kernelning ma'lum bir funksiyasi RPi OS'da qanday implementatsiya qilinganini tushuntiradi va so'ngra xuddi o'sha funksiya Linux kernelida qanday ishlashini ko'rsatishga harakat qiladi.
 
-Men o'zimning 64-bit long rejimi (64-bit long mode), sahifalash (paging) va sodda kontekst almashinuvini (context switching) qo'llab quvvatlovchi [kernelchamni](https://github.com/gurugio/caos) yasab ko'rganman. O'z kernelchangizni yasab ko'rish zamonaviy kompyuter arxitekturasini va hardware boshqaruvini tushunishni yaxshi yo'li hisoblanadi.
+Men o'zimning 64-bit long rejimi (64-bit long mode), peyjing (paging) va sodda kontekst almashinuvini (context switching) qo'llab quvvatlovchi [kernelchamni](https://github.com/gurugio/caos) yasab ko'rganman. O'z kernelchangizni yasab ko'rish zamonaviy kompyuter arxitekturasini va hardware boshqaruvini tushunishni yaxshi yo'li hisoblanadi.
 
 Darhaqiqat, Sizda eng so'nggi protsessor va eng so'nggi hardware qurilmalari bor. Sizning laptopingiz! Sizni desktopingiz! Sizga boshlash uchun hamma narsa muhayyo!
 Siz biror narsa sotib olishingiz shartmas.
 Qemu emulatori eng so'nggi ARM va Intel protessorlarini emulyatsiya qila oladi.
 Demak, Sizga kerak bo'lgan barcha narsa qo'lingizda tayyor turibdi.
 Siz foydalanishingiz uchun hozirda ko'plab kernelchalar va dokumentlar bor.
-Shunchaki qemu emulatorini o'rnating va o'zingizning kichik ishga tushadigan (boots), sahifalashni yoqadigan (turns on paging) va bir qancha habarlarni chop etadigan kernelingizni yasang.
+Shunchaki qemu emulatorini o'rnating va o'zingizning kichik ishga tushadigan (boots), peyjingni yoqadigan (turns on paging) va bir qancha habarlarni chop etadigan kernelingizni yasang.
 
 Boshqa kernelchalar:
 * https://littleosbook.github.io/
@@ -232,11 +232,11 @@ Boshlang'ichdan yuqori darajagacha (advanced) bo'lgan Linux kerneli va qurilma d
 		* Linux kerneli dizaynini tushuning
 	* Linux Kernelini Tushunish  ----  [Understanding the Linux Kernel](https://www.amazon.com/Understanding-Linux-Kernel-Third-Daniel/dp/0596005652/ref=sr_1_1?ie=UTF8&qid=1483650712&sr=8-1&keywords=understanding+linux+kernel)
 		* Ushbu kitobni o'qish bilan bir vaqtda Linux kernelinig v2.6'sining manba kodini birga o'qing
-		* Hech qachon eng so'nggi versiya bilan boshlamang, v2.6 yetadi!
+		* Hech qachon eng so'nggi talqin bilan boshlamang, v2.6 yetadi!
 		* Qemu va gdb'ni ishlatgan holda kernel kodini satrma-satr yurgizing
 			* http://stackoverflow.com/questions/11408041/how-to-debug-the-linux-kernel-with-gdb-and-qemu
 			* https://github.com/gurugio/linuxdeveloptip/blob/master/qemu-gdb-kdump.md
-		* busybox'ni ishga tushishda (boot) faqatgina bir soniya oladigan eng sodda file tizimini (filesystem) yasash uchun ishlating 
+		* busybox'ni ishga tushishda (boot) faqatgina bir soniya oladigan eng sodda fayl tizimini (filesystem) yasash uchun ishlating 
 			* https://github.com/gurugio/linuxdeveloptip/blob/master/minikernelwithbusybox.md
 * Boshqa resurslar: Men tavsiya qiladigan bepul manbalar
 	* Linux qurilma drayveri laboratoriyasi  ----   [Linux device driver labs](https://linux-kernel-labs.github.io/)
@@ -257,7 +257,7 @@ Boshlang'ichdan yuqori darajagacha (advanced) bo'lgan Linux kerneli va qurilma d
 	* Linuxning md drayveri (Koreys tilida) [md driver of Linux kernel(Korean)](https://github.com/gurugio/book_linuxkernel_md)
 		* mdadm asbobi (tool) qanday ishaydi va u qanday qilib md drayverini chaqirishi (call) haqida
 		* md drayveri qanday ishlashi haqida
-	* Lion'ning UNIX 6-versiyasi bo'yicha Izohi, Manba Kodi bilan  ----  [Lions' Commentary on UNIX 6th Edition, with Source Code](https://en.wikipedia.org/wiki/Lions%27_Commentary_on_UNIX_6th_Edition,_with_Source_Code)
+	* Lion'ning UNIX 6-talqini bo'yicha Izohi, Manba Kodi bilan  ----  [Lions' Commentary on UNIX 6th Edition, with Source Code](https://en.wikipedia.org/wiki/Lions%27_Commentary_on_UNIX_6th_Edition,_with_Source_Code)
 
 #### Qo'shimcha adabiyotlar
 
@@ -267,7 +267,7 @@ Bularni Sizga biror narsa kerak bo'lganida tekshirib ko'ring
 * Julia Evansning blog posti: Siz kernel hakeri bo'la olasiz!  ----   [Julia Evans's posting: You can be a kernel hacker!](http://jvns.ca/blog/2014/09/18/you-can-be-a-kernel-hacker/)
 	* kernel dasturlashni boshlash uchun qo'llanma
 
-### Boshqa tatbiqlar
+### Boshqa qo'llanilish sohalari
 
 Ha, Siz Linux yoki firmware'ga qiziqmasligingiz mumkin. Agar shunday bo'lsa, Siz bu bilimlar/ko'nikmalar ishlatiladigan boshqa tatbiqlarni topishingiz mumkin:
 - Windows tizim dasturlashi & qurilma drayverlari
@@ -285,7 +285,7 @@ Menda bu tatbiqlar bo'yicha hech qanday bilim yo'q. Iltimos, menga yangi boshlov
 Men kelajakni bilmayman, lekin e'tiborimni Rust'ga qaratib turaman.
 * https://hacks.mozilla.org/2016/11/rust-and-the-future-of-systems-programming/
 
-Agar menda to'liq bir hafta bo'shj bo'lganimda, men Rustni o'rgangan bo'lardim.
+Agar men to'liq bir hafta bo'sh bo'lganimda, men Rustni o'rgangan bo'lardim.
 Buning sababi Rust Linux qurilma drayverlarini yasashim uchun eng so'nggi dastulash tilidir.
 * https://github.com/tsgates/rust.ko
 
