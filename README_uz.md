@@ -15,7 +15,7 @@ ESLATMA 3: Agar Siz tezroq boshlashni istasangiz, "Qanday boshlash kerak?" bo'li
 		* [Assembly](#assembly)
 		* [C dasturlash tili](#c-dasturlash-tili)
 		* [Rust dasturlash tili](#rust-dasturlash-tili)
-	* [Qo'llanilish Sohalari](#Qo'llanilish Sohalari)
+	* [Qo'llanilish Sohalari](#qo'llanilish-sohalari)
 		* [Hardware va Firmware](#hardware-va-firmware)
 		* [Linux kerneli va qurilmalar drayverlari](#linux-kerneli-va-qurilmalar-drayverlari)
 			* [Qo'shimcha adabiyolar](#qo'shimcha-adabiyotlar)
